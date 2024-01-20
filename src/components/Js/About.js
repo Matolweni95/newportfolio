@@ -6,7 +6,7 @@ import codeBlock from '../../assets/codeBlock.svg';
 const About = () => {
   return (
     <>
-      <div className='flex justify-center h-100 '>
+      <div className='flex justify-center h-100 ' id='#about'>
         <section className=" ">
           <div className='about text-[--text] flex flex-col lg:flex-row'>
           <div className="about-main flex items-center mt-12">
@@ -20,10 +20,9 @@ const About = () => {
               </div>
               <div className="about-content w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
                 <div className="about-content-container">
-                  <p>Professionally connected with the web development industry.</p>
-                  <p>Problem solver, well-organised person, loyal employee with high attention to detail.</p>
-                  <p>Fan of Boxing, outdoor activities, video games, and coding of course.</p>
-                  <p>Interested in the entire frontend spectrum and working on ambitious projects with interesting people.</p>
+                  <p className='text-justify'>
+                  Enthusiastic about frontend development, I thrive on embracing new challenges and collaborating with like-minded individuals in the field. Beyond coding, gaming is a source of joy and inspiration for me. My personality is defined by drive, loyalty, and a natural problem-solving ability, bringing unwavering dedication to every project. With a keen eye for detail and a passion for crafting seamless user experiences, I delve into the entire frontend spectrum. I am not just a developer; I am a creative problem-solver, dedicated collaborator, and technology enthusiast, driven by the possibilities within the digital landscape.
+                </p>
                 </div>
               </div>
             </div>
@@ -32,7 +31,7 @@ const About = () => {
           
         
         </section>
-        
+       
       </div>
       
     </>

@@ -13,10 +13,9 @@ const Hero = () => {
                 Frontend Software Developer
               </h1>
               <p className="text-base lg:text-lg xl:text-xl mb-6 lg:w-4/5">
-              Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.
-              </p>
+                Addressing design challenges, crafting intelligent user interfaces with meaningful interactions, and creating sophisticated web applications to deliver seamless online experiences.              </p>
               <div className="link-container">
-                <a href="#about" className="text-purple">Read more...</a>
+                
               </div>
             </div>
             <div className="hero-img relative md:w-1/2 ">

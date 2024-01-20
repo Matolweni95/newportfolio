@@ -1,14 +1,14 @@
-import React from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useRef, useState } from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import '../../styles/swiper.css';
 import git from '../../assets/git.png';
-import poke from '../../assets/poke3.png';
-import hero from '../../assets/hero.svg';
+import bill from '../../assets/bill.jpg';
+import quiz1 from '../../assets/quiz1.jpg';
+import quiz2 from '../../assets/quiz2.jpg';
+import quiz from '../../assets/quiz.png';
+import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
     <>
@@ -31,9 +31,11 @@ const Projects = () => {
                   className="mySwiper mt-12"
                   >
                   <SwiperSlide>
-                  <div className='project_holder m-0 flex flex-col lg:flex-row p-8 gap-10'>
-                      <div className='image_placeholder md:w-full lg:2/3'>
-                        <img className='project_image lg:w-full  h-full object-cover' src={poke} />
+                  <div className='project_holder m-0 flex flex-col lg:flex-row p-8 gap-10'> 
+                  <div className='w-full flex justify-center'>        
+                      <div className='image_placeholder flex justify-center  md:w-3/4 lg:3/4'>
+                        <img className='project_image lg:w-3/4 h-full object-cover' src={quiz1} />
+                      </div>
                       </div>
                       <div className='project_text w-full flex flex-col justify-center text-[--cardtext]'>
                       <h3 className='pb-9 md:text-5xl text-1xl'>Coding Quiz</h3>
@@ -46,8 +48,12 @@ const Projects = () => {
                           this intuitive quiz app.
                       </span>
                         <div className='btns flex gap-10 mt-10'>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>View the code</button>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>Visit the app</button>
+                         <Link to="https://github.com/Matolweni95/my-quiz-app" target='_blank'>
+                        <button className='view bg-purple p-4 rounded-lg w-full text-[--btntext]'>View the code</button>
+                        </Link>
+                        <Link to="https://welearn2code.netlify.app/" target='_blank'>
+                          <button className='view bg-purple p-4 w-full rounded-lg text-[--btntext]'>Visit the app</button>
+                        </Link>
                         </div>
                       </div>
                     </div>
@@ -55,7 +61,7 @@ const Projects = () => {
                   <SwiperSlide>
                   <div className='project_holder m-0 flex flex-col lg:flex-row p-8 gap-10'>
                       <div className='image_placeholder md:w-full lg:2/3'>
-                        <img className='project_image lg:w-full  h-full object-cover' src={poke} />
+                        <img className='project_image lg:w-full  h-full object-cover' src={bill} />
                       </div>
                       <div className='project_text w-full flex flex-col justify-center text-[--cardtext]'>
                         <h3 className='pb-9 md:text-5xl text-1xl'>Invoice App</h3>
@@ -65,13 +71,17 @@ const Projects = () => {
                         and Supabase for a robust backend. 
                         </span>
                         <div className='btns flex gap-10 mt-10'>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>View the code</button>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>Visit the app</button>
+                          <Link to="https://github.com/Matolweni95/invoice-app">
+                              <button className='view w-full bg-purple p-4 w-full rounded-lg text-[--btntext]'>View the code</button>
+                          </Link>
+                          <Link to="https://eazyinvoice.netlify.app/home">
+                        <button className='view bg-purple p-4 w-full rounded-lg text-[--btntext]'>Visit the app</button>
+                        </Link>
                         </div>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide>
+                  {/* <SwiperSlide>
                   <div className='project_holder m-0 flex flex-col lg:flex-row p-8 gap-10'>
                       <div className='image_placeholder md:w-full lg:2/3'>
                         <img className='project_image lg:w-full  h-full object-cover' src={poke} />
@@ -87,7 +97,7 @@ const Projects = () => {
                         </div>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                   <SwiperSlide>
                   <div className='project_holder m-0 flex flex-col lg:flex-row p-8 gap-10'>
                       <div className='image_placeholder md:w-full lg:2/3'>
@@ -103,8 +113,12 @@ const Projects = () => {
                           this intuitive GitHub Profile Viewer.
                         </span>
                         <div className='btns flex gap-10 mt-10'>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>View the code</button>
-                        <button className='view bg-purple p-4 rounded-lg text-[--btntext]'>Visit the app</button>
+                          <Link to="https://github.com/Matolweni95/VueGithubProfiler">
+                            <button className='view w-full bg-purple p-4 rounded-lg text-[--btntext]'>View the code</button>
+                          </Link>
+                          <Link to="https://vuegithubprofiler.netlify.app/"> 
+                            <button className='view w-full bg-purple p-4 rounded-lg text-[--btntext]'>Visit the app</button>
+                          </Link>
                         </div>
                       </div>
                     </div>

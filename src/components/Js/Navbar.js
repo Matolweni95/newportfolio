@@ -39,9 +39,9 @@ const Navbar = () => {
           <nav className="navbar flex-end ml-auto z-10">
             <ul className='nav-list'>
               <li className='nav-item flex items-center'>
-                <button href='#' className='text-black pt-2 pb-2 pl-5 border-[--text] text-[--text] pr-5 bg-white border-2 rounded-md'>
+                {/* <button href='#' className='text-black pt-2 pb-2 pl-5 border-[--text] text-[--text] pr-5 bg-white border-2 rounded-md'>
                   Contact
-                </button>
+                </button> */}
                 <label className="switch ml-4">
                   <input
                     className='dark_mode'
